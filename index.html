@@ -5,40 +5,100 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nexcent Landing Page</title>
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; font-family: sans-serif; }
-        body { background-color: #F5F7FA; color: #4D4D4D; }
-        nav { display: flex; justify-content: space-between; padding: 20px 10%; background: #fff; align-items: center; }
-        .logo { font-size: 24px; font-weight: bold; }
+        /* General Styles */
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
+        body { background-color: #F5F7FA; color: #4D4D4D; line-height: 1.6; }
+
+        /* Navbar */
+        nav { display: flex; justify-content: space-between; padding: 20px 10%; background: #fff; align-items: center; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
+        .logo { font-size: 24px; font-weight: bold; color: #263238; }
         .logo span { color: #4CAF50; }
         nav ul { display: flex; list-style: none; }
-        nav ul li { margin: 0 15px; }
-        .btn { background: #4CAF50; color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none; }
-        .hero { display: flex; padding: 80px 10%; align-items: center; }
-        .hero-text h1 { font-size: 48px; }
+        nav ul li { margin: 0 15px; cursor: pointer; }
+        .btn { background: #4CAF50; color: white; padding: 12px 25px; border-radius: 4px; text-decoration: none; font-weight: 500; transition: 0.3s; }
+        .btn:hover { background: #388E3C; }
+
+        /* Hero Section */
+        .hero { display: flex; padding: 80px 10%; align-items: center; justify-content: space-between; background: #F5F7FA; }
+        .hero-text { flex: 1; }
+        .hero-text h1 { font-size: 56px; color: #4D4D4D; margin-bottom: 20px; }
         .hero-text h1 span { color: #4CAF50; }
+        .hero-text p { margin-bottom: 30px; font-size: 16px; color: #717171; }
+        .hero-image { flex: 1; text-align: right; }
         .hero-image img { width: 100%; max-width: 400px; }
+
+        /* Clients Section */
+        .clients { padding: 60px 10%; text-align: center; background: #fff; }
+        .clients h2 { font-size: 28px; color: #4D4D4D; }
+        .clients p { color: #717171; margin-bottom: 40px; }
+        .client-logos { display: flex; justify-content: space-around; flex-wrap: wrap; opacity: 0.6; }
+        .client-logos span { font-weight: bold; font-size: 20px; }
+
+        /* Community Section */
+        .community { padding: 80px 10%; text-align: center; }
+        .community h2 { margin-bottom: 10px; font-size: 32px; color: #4D4D4D; }
+        .community-cards { display: flex; justify-content: space-between; margin-top: 50px; gap: 30px; }
+        .card { background: #fff; padding: 30px; border-radius: 8px; flex: 1; box-shadow: 0 4px 12px rgba(0,0,0,0.05); text-align: center; }
+        .card h3 { color: #4D4D4D; margin-bottom: 15px; font-size: 22px; }
+        .card p { color: #717171; font-size: 14px; }
     </style>
 </head>
 <body>
+
     <nav>
         <div class="logo">Nex<span>cent</span></div>
         <ul>
             <li>Home</li>
             <li>Features</li>
             <li>Community</li>
+            <li>Blog</li>
+            <li>Pricing</li>
         </ul>
         <a href="#" class="btn">Register Now →</a>
     </nav>
+
     <section class="hero">
         <div class="hero-text">
-            <h1>DISCOVER <br><span>COLLECT GAME</span> <br>FROM US</h1>
-            <p>Figma design theke banano prothom landing page.</p>
-            <br>
+            <h1>Lessons and insights <br><span>from 8 years</span></h1>
+            <p>Where to grow your business as a photographer: site or social media?</p>
             <a href="#" class="btn">Register</a>
         </div>
         <div class="hero-image">
-            <img src="https://via.placeholder.com/400" alt="Illustration">
+            <img src="https://via.placeholder.com/400x300/4CAF50/FFFFFF?text=Illustration" alt="Hero Illustration">
         </div>
     </section>
+
+    <section class="clients">
+        <h2>Our Clients</h2>
+        <p>We have been working with some Fortune 500+ clients</p>
+        <div class="client-logos">
+            <span>LOGO 1</span>
+            <span>LOGO 2</span>
+            <span>LOGO 3</span>
+            <span>LOGO 4</span>
+            <span>LOGO 5</span>
+            <span>LOGO 6</span>
+        </div>
+    </section>
+
+    <section class="community">
+        <h2>Manage your entire community <br>in a single system</h2>
+        <p>Who is Nextcent suitable for?</p>
+        <div class="community-cards">
+            <div class="card">
+                <h3>Membership Organisations</h3>
+                <p>Our membership management software provides full automation of membership renewals and payments.</p>
+            </div>
+            <div class="card">
+                <h3>National Associations</h3>
+                <p>Our membership management software provides full automation of membership renewals and payments.</p>
+            </div>
+            <div class="card">
+                <h3>Clubs and Groups</h3>
+                <p>Our membership management software provides full automation of membership renewals and payments.</p>
+            </div>
+        </div>
+    </section>
+
 </body>
-</html>
+</html>>
